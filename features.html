@@ -3,43 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriSafe - Features</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TriSafe - Key Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .feature {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 40px;
+            margin-right: 15px;
+            color: #333;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="trisafe-logo.png" alt="TriSafe Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="founders.html">Founders</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="features">
-        <div class="container">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Real-Time Tracking and Notifications</li>
-                <li>Secure and Insured Storage Facilities</li>
-                <li>Personalized Luggage Services</li>
-                <li>Smart Lockers and Automated Retrieval</li>
-                <li>Eco-Friendly Transportation</li>
-                <li>Flexible Payment Plans</li>
-                <li>VIP and Premium Services</li>
-                <li>Multi-City Luggage Services</li>
-            </ul>
-        </div>
-    </section>
+    <div class="container">
+        <h1>Key Features of TriSafe</h1>
+        <div class="features-grid">
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 TriSafe. All Rights Reserved.</p>
+            <div class="feature">
+                <i class="fas fa-map-marker-alt icon"></i>
+                <h2>Real-Time GPS Tracking and Notifications</h2>
+                <p>Track your luggage in real-time from pick-up to drop-off. Receive notifications every step of the way, ensuring transparency and peace of mind.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-lock icon"></i>
+                <h2>Secure and Insured Storage</h2>
+                <p>Our storage facilities offer 24/7 surveillance with an option for insured storage of high-value items, ensuring maximum safety for your belongings.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-tools icon"></i>
+                <h2>Personalized Services</h2>
+                <p>We offer additional services like luggage wrapping, cleaning, and minor repairs, allowing you to customize your travel experience to suit your needs.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-locker icon"></i>
+                <h2>Smart Lockers & Automated Retrieval</h2>
+                <p>Store and retrieve luggage anytime using QR codes or the TriSafe app at our smart lockers, offering ultimate convenience for busy travelers.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-leaf icon"></i>
+                <h2>Eco-Friendly Transport</h2>
+                <p>We utilize electric vehicles for luggage transportation and offer carbon offset options to make your journey environmentally friendly.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-credit-card icon"></i>
+                <h2>Flexible Payment Plans</h2>
+                <p>Choose from pay-as-you-go, subscription models for frequent travelers, or installment plans for long-term storage—whatever suits your needs.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-star icon"></i>
+                <h2>VIP and Premium Services</h2>
+                <p>Our premium services include priority pick-up, concierge service, and luxury lounge access, giving you the ultimate travel experience.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-plane icon"></i>
+                <h2>Multi-City Service</h2>
+                <p>Store your luggage in one city and retrieve it in another, making it perfect for travelers with multi-destination itineraries.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-luggage-cart icon"></i>
+                <h2>Integrated Travel Experience</h2>
+                <p>The TriSafe app integrates with popular travel apps, allowing you to manage your luggage storage with ease as part of your travel plans.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fas fa-headset icon"></i>
+                <h2>24/7 In-App Customer Support</h2>
+                <p>Our AI-powered chatbots provide 24/7 support for any queries or booking modifications, ensuring smooth customer service.</p>
+            </div>
+
         </div>
-    </footer>
+    </div>
+
 </body>
 </html>
