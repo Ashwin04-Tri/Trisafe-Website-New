@@ -3,86 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriSafe Services</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>TriSafe - Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .services-section {
+            padding: 50px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .services-header {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .services-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            background-color: #000;
+            color: #fff;
+            padding: 30px;
+            width: 30%;
+            margin: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            background-color: #444;
+        }
+        .service-item i {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: #f1c40f;
+        }
+        .service-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        @media(max-width: 768px) {
+            .service-item {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <div class="logo-container">
-            <img src="logo.png" alt="TriSafe Logo" class="logo"> <!-- Placeholder for logo -->
-            <h1>TriSafe</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="trisafe-logo.png.png" alt="TriSafe Logo">
+        <h1>TriSafe: Your Trusted Travel Companion</h1>
     </header>
 
-    <section id="services" class="services-section">
-        <h2 class="section-title">Our Services</h2>
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-header">Our Services</div>
         <div class="services-container">
+            <!-- Service 1 -->
             <div class="service-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Real-Time GPS Tracking</h3>
-                <p>Track your luggage from pick-up to drop-off with real-time updates and notifications at every stage.</p>
+                <i class="fas fa-suitcase-rolling"></i>
+                <h3>Real-Time Luggage Tracking</h3>
+                <p>Track your luggage in real-time with our GPS-powered tracking system. Get instant notifications for added peace of mind.</p>
             </div>
+            <!-- Service 2 -->
             <div class="service-item">
                 <i class="fas fa-lock"></i>
-                <h3>Secure & Insured Storage</h3>
-                <p>Store your luggage in secure facilities with 24/7 surveillance, and insure valuable items for peace of mind.</p>
+                <h3>Secure and Insured Storage</h3>
+                <p>Store your luggage in our secure facilities equipped with 24/7 surveillance and optional insurance coverage for high-value items.</p>
             </div>
-            <div class="service-item">
-                <i class="fas fa-cogs"></i>
-                <h3>Personalized Services</h3>
-                <p>Get luggage wrapping, cleaning, and minor repairs with fully customizable options based on your travel needs.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-robot"></i>
-                <h3>Smart Lockers</h3>
-                <p>Access your luggage anytime using smart lockers with QR code functionality and app integration.</p>
-            </div>
+            <!-- Service 3 -->
             <div class="service-item">
                 <i class="fas fa-leaf"></i>
                 <h3>Eco-Friendly Transport</h3>
-                <p>We use electric vehicles for luggage transport, with carbon offset options for environmentally conscious travelers.</p>
+                <p>We use electric vehicles for luggage transport and offer carbon offset options for environmentally conscious travelers.</p>
             </div>
+            <!-- Service 4 -->
             <div class="service-item">
-                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-hand-holding-usd"></i>
                 <h3>Flexible Payment Plans</h3>
-                <p>Choose from pay-as-you-go, subscription models, or installment plans for long-term storage services.</p>
+                <p>Choose from pay-as-you-go, subscription models, or installment plans to suit your travel and storage needs.</p>
             </div>
+            <!-- Service 5 -->
             <div class="service-item">
-                <i class="fas fa-star"></i>
-                <h3>VIP & Premium Services</h3>
-                <p>Enjoy priority pick-up, drop-off, concierge services, and luxury lounge access for high-end travelers.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-city"></i>
+                <i class="fas fa-globe"></i>
                 <h3>Multi-City Service</h3>
-                <p>Store your luggage in one city and retrieve it in another, perfect for multi-destination travelers.</p>
+                <p>Store your luggage in one city and retrieve it in another, perfect for travelers with multi-destination itineraries.</p>
             </div>
+            <!-- Service 6 -->
             <div class="service-item">
-                <i class="fas fa-plane"></i>
-                <h3>Integrated Travel Experience</h3>
-                <p>Seamlessly integrate with travel apps to manage luggage storage as part of your travel plans.</p>
-            </div>
-            <div class="service-item">
-                <i class="fas fa-comments"></i>
+                <i class="fas fa-headset"></i>
                 <h3>24/7 Customer Support</h3>
-                <p>Get assistance anytime with AI-powered chatbots, ready to help with booking changes and inquiries.</p>
+                <p>Our AI-powered chatbots and dedicated customer support team are available around the clock for assistance.</p>
             </div>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 TriSafe. All Rights Reserved.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Font Awesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>
