@@ -3,48 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriSafe - Founders</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TriSafe | Founders</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .founder-card {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .founder-card.visible {
+            opacity: 1;
+        }
+
+        .founder-photo {
+            flex: 1;
+            max-width: 200px;
+        }
+
+        .founder-photo img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .founder-details {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .nav-btn {
+            padding: 12px 25px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background-color: #333;
+            transform: scale(1.05);
+        }
+
+        /* CSS Animations for fade-in */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .visible {
+            opacity: 1;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="trisafe-logo.png" alt="TriSafe Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="features.html">Features</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="founders">
-        <div class="container">
-            <h2>Meet Our Founders</h2>
-            <p>Our team of founders brings a diverse set of skills and experience in entrepreneurship, logistics, and AI technologies, working together to create the best possible service for travelers worldwide.</p>
-            <div class="founders-info">
-                <div class="founder">
-                    <h3>Aswin Asokan</h3>
-                    <p>Founder & CEO - Expertise in travel logistics and business development.</p>
-                </div>
-                <div class="founder">
-                    <h3>Charley</h3>
-                    <p>Co-Founder & CTO - Specializes in AI solutions and tech innovations.</p>
-                </div>
-                <div class="founder">
-                    <h3>Nishan</h3>
-                    <p>Co-Founder & COO - Background in operations and customer service excellence.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<header>
+    <h1>TriSafe | Meet Our Founders</h1>
+</header>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 TriSafe. All Rights Reserved.</p>
+<div class="container">
+    <!-- Founder 1: Aswin Asokan -->
+    <div class="founder-card fade-in" id="founder-aswin">
+        <div class="founder-photo">
+            <img src="path-to-aswin-photo.jpg" alt="Aswin Asokan">
         </div>
-    </footer>
+        <div class="founder-details">
+            <h2>Aswin Asokan</h2>
+            <p><strong>Founder & CEO</strong></p>
+            <p>Aswin Asokan is the brain behind TriSafe, serving as the visionary Founder & CEO. With a deep passion for travel technology, Aswin leads the company with innovative strategies, ensuring seamless luggage management services across the globe. His goal is to redefine the way people travel by offering smart, secure, and eco-friendly solutions for travelers.</p>
+        </div>
+    </div>
+
+    <!-- Founder 2: Charley Jose -->
+    <div class="founder-card fade-in" id="founder-charley">
+        <div class="founder-photo">
+            <img src="path-to-charley-photo.jpg" alt="Charley Jose">
+        </div>
+        <div class="founder-details">
+            <h2>Charley Jose</h2>
+            <p><strong>Co-Founder & Chief Technology Officer (CTO)</strong></p>
+            <p>Charley Jose brings advanced technological expertise to TriSafe. As the CTO, Charley oversees the development of AI-driven solutions and the integration of real-time GPS tracking, ensuring that our tech infrastructure delivers on its promise of security and reliability for our customers.</p>
+        </div>
+    </div>
+
+    <!-- Founder 3: Nishan P. Nasim -->
+    <div class="founder-card fade-in" id="founder-nishan">
+        <div class="founder-photo">
+            <img src="path-to-nishan-photo.jpg" alt="Nishan P. Nasim">
+        </div>
+        <div class="founder-details">
+            <h2>Nishan P. Nasim</h2>
+            <p><strong>Co-Founder & Chief Operating Officer (COO)</strong></p>
+            <p>Nishan Nasim is TriSafe's operational mastermind. As COO, he ensures smooth daily operations, focusing on optimizing logistics, managing secure storage facilities, and delivering an unparalleled customer experience. His vision is to provide travelers with the peace of mind they need to enjoy their journeys.</p>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="index.html" class="nav-btn">Back to Home</a>
+        <a href="features.html" class="nav-btn">Features</a>
+    </div>
+</div>
+
+<script>
+    // JavaScript to trigger fade-in effect for each founder card
+    document.addEventListener('DOMContentLoaded', function () {
+        const founderCards = document.querySelectorAll('.founder-card');
+        founderCards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 500); // Delay each card's appearance by 500ms
+        });
+    });
+</script>
+
 </body>
 </html>
