@@ -3,151 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TriSafe - Services</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-
-        header {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px 0;
-        }
-
-        .service-list {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .service-list h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.8em;
-            color: black;
-            cursor: pointer;
-            border-bottom: 1px solid #ccc;
-        }
-
-        .service-list p {
-            font-size: 1em;
-            color: #555;
-            display: none;
-        }
-
-        footer {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        button {
-            background-color: black;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-    </style>
+    <title>TriSafe Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="TriSafe Logo" class="logo"> <!-- Placeholder for logo -->
+            <h1>TriSafe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <h1>TriSafe: Your Trusted Travel Companion</h1>
-</header>
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Real-Time GPS Tracking</h3>
+                <p>Track your luggage from pick-up to drop-off with real-time updates and notifications at every stage.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-lock"></i>
+                <h3>Secure & Insured Storage</h3>
+                <p>Store your luggage in secure facilities with 24/7 surveillance, and insure valuable items for peace of mind.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Personalized Services</h3>
+                <p>Get luggage wrapping, cleaning, and minor repairs with fully customizable options based on your travel needs.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-robot"></i>
+                <h3>Smart Lockers</h3>
+                <p>Access your luggage anytime using smart lockers with QR code functionality and app integration.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-leaf"></i>
+                <h3>Eco-Friendly Transport</h3>
+                <p>We use electric vehicles for luggage transport, with carbon offset options for environmentally conscious travelers.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-credit-card"></i>
+                <h3>Flexible Payment Plans</h3>
+                <p>Choose from pay-as-you-go, subscription models, or installment plans for long-term storage services.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-star"></i>
+                <h3>VIP & Premium Services</h3>
+                <p>Enjoy priority pick-up, drop-off, concierge services, and luxury lounge access for high-end travelers.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-city"></i>
+                <h3>Multi-City Service</h3>
+                <p>Store your luggage in one city and retrieve it in another, perfect for multi-destination travelers.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-plane"></i>
+                <h3>Integrated Travel Experience</h3>
+                <p>Seamlessly integrate with travel apps to manage luggage storage as part of your travel plans.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-comments"></i>
+                <h3>24/7 Customer Support</h3>
+                <p>Get assistance anytime with AI-powered chatbots, ready to help with booking changes and inquiries.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
+    <footer>
+        <p>&copy; 2024 TriSafe. All Rights Reserved.</p>
+    </footer>
 
-    <div class="service-list">
-        <h2 onclick="toggleDetails(1)">Real-Time Tracking and Notifications</h2>
-        <p id="details1">Track your luggage from pickup to delivery with real-time updates and notifications at every step.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(2)">Secure and Insured Storage</h2>
-        <p id="details2">We offer 24/7 surveillance and optional insurance for high-value items, ensuring your luggage's safety.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(3)">Personalized Luggage Services</h2>
-        <p id="details3">Customize your experience with luggage wrapping, cleaning, and minor repairs.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(4)">Smart Lockers and Automated Retrieval</h2>
-        <p id="details4">Store and retrieve your luggage 24/7 using our smart lockers via QR code or the TriSafe app.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(5)">Eco-Friendly Transportation</h2>
-        <p id="details5">We use electric vehicles and offer carbon offset options for environmentally conscious travelers.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(6)">Flexible Payment Plans</h2>
-        <p id="details6">Choose from pay-as-you-go, subscription models for frequent travelers, or installment plans for long-term storage.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(7)">VIP and Premium Services</h2>
-        <p id="details7">Enjoy priority pick-up and drop-off, concierge services, and luxury lounges while you wait for your luggage.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(8)">Multi-City Luggage Management</h2>
-        <p id="details8">Store your luggage in one city and retrieve it in another, ideal for complex travel itineraries.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(9)">Integrated Travel Experience</h2>
-        <p id="details9">The TriSafe app integrates with popular travel apps to streamline luggage management.</p>
-    </div>
-
-    <div class="service-list">
-        <h2 onclick="toggleDetails(10)">In-App AI-Powered Customer Support</h2>
-        <p id="details10">24/7 AI-powered customer support for assistance with bookings, modifications, and general inquiries.</p>
-    </div>
-
-    <button onclick="location.href='mailto:trisafesupport@gmail.com';">Contact Us</button>
-</div>
-
-<footer>
-    <p>&copy; 2024 TriSafe. All rights reserved.</p>
-</footer>
-
-<script>
-    function toggleDetails(id) {
-        var details = document.getElementById("details" + id);
-        if (details.style.display === "block") {
-            details.style.display = "none";
-        } else {
-            details.style.display = "block";
-        }
-    }
-</script>
-
+    <script src="scripts.js"></script>
 </body>
 </html>
